@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit -<%= filename %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/stylesheet/edit.css">
+</head>
+<body>
+
+  <div class="container bg-zinc-900 h-screen w-full p-10">
+    <a class="text-blue-600  text-2xl inline-block mb-10" href="/">Go back to home <i class="fa-regular fa-house"></i> </a>
+    <form action="/edit/" method="post">
+      <input 
+      name="previous"
+      class="outline-none px-5 py-2 block bg-zinc-800 w-1/3 mt-2 rounded-lg text-slate-500"
+      type="text"
+      value="<%= filename %>" />
+
+      <input
+      name="new" class="outline-none px-5 py-2 block bg-zinc-800 w-1/3 mt-2 rounded-lg text-white truncate"
+      type="text"
+      placeholder="New name" />
+
+      <input 
+      class="mt-4 px-5 py-2 bg-yellow-600 hover:bg-yellow-700 rounded text-white font-medium transition-colors" type="submit" 
+      value="Update">
+
+    </form>
+  </div>
+</body>
+</html>

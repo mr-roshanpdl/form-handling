@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about <%= filename %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container bg-zinc-900 h-screen w-full p-10">
+    <div class="card max-w-md bg-neutral-700 px-4 py-5 rounded-md">
+      <a class="text-blue-600  text-2xl inline-block mb-10" href="/">Go back to home <i class="fa-regular fa-house"></i> </a>
+      <h3 class="lg:text-3xl md:text-md sm:text-md text-bold text-white mt-5"><%= filename.split(" ") %></h3>
+      <p class="text-base mt-2 text-zinc-300"><%= data%></p>
+    </div>
+  </div>
+</body>
+</html>
